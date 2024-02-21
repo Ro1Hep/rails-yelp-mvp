@@ -1,6 +1,6 @@
-<ul class="list">
+<ul class="list-group">
   <% @restaurants.each do |restaurant| %>
-    <li>
+    <li class="list-item">
       <%= link_to restaurant[:name], restaurant_path(restaurant) %>
     </li>
   <% end %>
